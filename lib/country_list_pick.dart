@@ -137,7 +137,7 @@ class _CountryListPickState extends State<CountryListPick> {
                   ),
                 if (widget.theme?.isDownIcon ?? true == true)
                   Flexible(
-                    child: Icon(Icons.keyboard_arrow_down),
+                    child: Icon(Icons.arrow_drop_down_outlined,color: Colors.grey),
                   )
               ],
             ),
