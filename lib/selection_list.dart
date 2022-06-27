@@ -93,7 +93,7 @@ class _SelectionListState extends State<SelectionList> {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Text(
-                            widget.theme?.searchText ?? 'SEARCH',
+                            widget.theme?.searchText ?? 'Procurar',
                             style: TextStyle(
                                 color:
                                     widget.theme?.labelColor ?? Colors.black),
@@ -112,7 +112,7 @@ class _SelectionListState extends State<SelectionList> {
                               contentPadding: EdgeInsets.only(
                                   left: 15, bottom: 0, top: 0, right: 15),
                               hintText:
-                                  widget.theme?.searchHintText ?? "Search...",
+                                  widget.theme?.searchHintText ?? "Procurar...",
                             ),
                             onChanged: _filterElements,
                           ),
@@ -120,7 +120,7 @@ class _SelectionListState extends State<SelectionList> {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Text(
-                            widget.theme?.lastPickText ?? 'LAST PICK',
+                            widget.theme?.lastPickText ?? 'Recentes',
                             style: TextStyle(
                                 color:
                                     widget.theme?.labelColor ?? Colors.black),
