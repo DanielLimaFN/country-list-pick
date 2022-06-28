@@ -73,7 +73,13 @@ class _SelectionListState extends State<SelectionList> {
       ));
     height = MediaQuery.of(context).size.height;
     Widget scaffold = Scaffold(
-      appBar: widget.appBar,
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_sharp),
+          color: appbaricon,
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
       body: Container(
         color: Color(0xfff4f4f4),
         child: LayoutBuilder(builder: (context, contrainsts) {
